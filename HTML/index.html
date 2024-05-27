@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta lang="ru">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <title>CUBIT</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="navigation-container">
+                <div class="company-logo">
+                    <img src="../images/CubtiLogo.svg" alt="LOGO">
+                </div>
+                <div class="header-label">
+                    <ul class="items">
+                        <li class="item">Продукты</li>
+                        <li class="item">Проекты</li>
+                        <li class="item">Услуги</li>
+                        <li class="item">Компания</li>
+                        <li class="item">Команда</li>
+                        <li class="item">Контакты</li>
+                    </ul>
+                </div>
+                <div class="header-button">
+                    <button class="telegramm"></button><button class="requests">Заявки</button>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <div class="description-container">
+            <h1 class="tesis">IT-Решения для предприятий промышленности</h1>
+            <p class="description">Мы молодая компания, но это не мешает нам создавать мощные продукты для вашего
+                бизнеса. Полностью ведем проект ли помогаем команде на стороне клиента.</p>
+            <button class="requests">Оставить заявку</button>
+        </div>
+        <div class="human-counter-container">
+            <h1 class="human-counter">1100</h1>
+            <p class="human-counter-description">человек ежедневно пользуются нашими продуктами</p>
+        </div>
+    </main>
+    <div class="scroll-feed">
+        <ul class="scroll-feed-content-1">
+            <li class="item">ClickHouse</li>
+            <li class="item">Laravel</li>
+            <li class="item">Django</li>
+            <li class="item">Yii</li>
+            <li class="item">PostgreSQL</li>
+            <li class="item">Flask</li>
+            <li class="item">Redis</li>
+        </ul>
+
+        <ul class="scroll-feed-content-2" aria-hidden="true">
+            <li class="item">ClickHouse</li>
+            <li class="item">Laravel</li>
+            <li class="item">Django</li>
+            <li class="item">Yii</li>
+            <li class="item">PostgreSQL</li>
+            <li class="item">Flask</li>
+            <li class="item">Redis</li>
+        </ul>
+    </div>
+    <div class="service-solution">
+        <h1 class="solution-tesis">Услуги и решения</h1>
+        <div class="solution-container">
+            <div class="solutions">
+                <button class="solution-btn tablink solution-selected"
+                    onclick="openSolution(event,'Bussiness')">Бизнес-анализ</button>
+                <button class="solution-btn tablink" onclick="openSolution(event,'Backend')">Backend</button>
+                <button class="solution-btn tablink" onclick="openSolution(event,'Frontend')">Frontend</button>
+                <button class="solution-btn tablink" onclick="openSolution(event,'Mobile')">Mobile</button>
+            </div>
+        </div>
+        <div class="solution-explanation-container solution" id="Bussiness">
+            <div class="solution-explanation">
+                <h1 class="solution-name">Бизнес-анализ</h1>
+                <p class="solution-description">Бесшовно встраиваем новые ИТ-решения в бизнес- процессы компаний.
+                    Анализируем
+                    уже существующие цифровые системы, предлагаем изменения, описываем технические требования на основе
+                    бизнес-требований.</p>
+                <ul class="solution-tags">
+                    <li class="solution-tag">HTML5</li>
+                    <li class="solution-tag">CSS3</li>
+                    <li class="solution-tag">Bootstrap</li>
+                    <li class="solution-tag">БЭМ</li>
+                    <li class="solution-tag">JS</li>
+                    <li class="solution-tag">Jquery</li>
+                    <li class="solution-tag">VanilaJS</li>
+                    <li class="solution-tag">ES6+</li>
+                    <li class="solution-tag">WebPack</li>
+                    <li class="solution-tag">VUE.js</li>
+                    <li class="solution-tag">React.js</li>
+                    <li class="solution-tag">Angular</li>
+                </ul>
+                <div class="info-container">
+                    <button class="requests">Заказать</button><a href="#" class="detail">Подробнее</a>
+                </div>
+            </div>
+            <img class="diagramm-picture" src="../images/diagramm.svg" alt="Diagramms">
+        </div>
+        <div class="solution-explanation-container hidden-block solution" id="Backend">
+            <div class="solution-explanation">
+                <h1 class="solution-name">Backend</h1>
+                <p class="solution-description">Бесшовно встраиваем новые ИТ-решения в бизнес- процессы компаний.
+                    Анализируем
+                    уже существующие цифровые системы, предлагаем изменения, описываем технические требования на основе
+                    бизнес-требований.</p>
+                <ul class="solution-tags">
+                    <li class="solution-tag">HTML5</li>
+                    <li class="solution-tag">CSS3</li>
+                    <li class="solution-tag">Bootstrap</li>
+                    <li class="solution-tag">БЭМ</li>
+                    <li class="solution-tag">JS</li>
+                    <li class="solution-tag">Jquery</li>
+                    <li class="solution-tag">VanilaJS</li>
+                    <li class="solution-tag">ES6+</li>
+                    <li class="solution-tag">WebPack</li>
+                    <li class="solution-tag">VUE.js</li>
+                    <li class="solution-tag">React.js</li>
+                    <li class="solution-tag">Angular</li>
+                </ul>
+                <div class="info-container">
+                    <button class="requests">Заказать</button><a href="#" class="detail">Подробнее</a>
+                </div>
+            </div>
+            <img class="diagramm-picture" src="../images/diagramm2.svg" alt="Diagramms">
+        </div>
+        <div class="solution-explanation-container hidden-block solution" id="Frontend">
+            <div class="solution-explanation">
+                <h1 class="solution-name">Frontend</h1>
+                <p class="solution-description">Бесшовно встраиваем новые ИТ-решения в бизнес- процессы компаний.
+                    Анализируем
+                    уже существующие цифровые системы, предлагаем изменения, описываем технические требования на основе
+                    бизнес-требований.</p>
+                <ul class="solution-tags">
+                    <li class="solution-tag">HTML5</li>
+                    <li class="solution-tag">CSS3</li>
+                    <li class="solution-tag">Bootstrap</li>
+                    <li class="solution-tag">БЭМ</li>
+                    <li class="solution-tag">JS</li>
+                    <li class="solution-tag">Jquery</li>
+                    <li class="solution-tag">VanilaJS</li>
+                    <li class="solution-tag">ES6+</li>
+                    <li class="solution-tag">WebPack</li>
+                    <li class="solution-tag">VUE.js</li>
+                    <li class="solution-tag">React.js</li>
+                    <li class="solution-tag">Angular</li>
+                </ul>
+                <div class="info-container">
+                    <button class="requests">Заказать</button><a href="#" class="detail">Подробнее</a>
+                </div>
+            </div>
+            <img class="diagramm-picture" src="../images/diagramm3.svg" alt="Diagramms">
+        </div>
+        <div class="solution-explanation-container hidden-block solution" id="Mobile">
+            <div class="solution-explanation">
+                <h1 class="solution-name">Mobile</h1>
+                <p class="solution-description">Бесшовно встраиваем новые ИТ-решения в бизнес- процессы компаний.
+                    Анализируем
+                    уже существующие цифровые системы, предлагаем изменения, описываем технические требования на основе
+                    бизнес-требований.</p>
+                <ul class="solution-tags">
+                    <li class="solution-tag">HTML5</li>
+                    <li class="solution-tag">CSS3</li>
+                    <li class="solution-tag">Bootstrap</li>
+                    <li class="solution-tag">БЭМ</li>
+                    <li class="solution-tag">JS</li>
+                    <li class="solution-tag">Jquery</li>
+                    <li class="solution-tag">VanilaJS</li>
+                    <li class="solution-tag">ES6+</li>
+                    <li class="solution-tag">WebPack</li>
+                    <li class="solution-tag">VUE.js</li>
+                    <li class="solution-tag">React.js</li>
+                    <li class="solution-tag">Angular</li>
+                </ul>
+                <div class="info-container">
+                    <button class="requests">Заказать</button><a href="#" class="detail">Подробнее</a>
+                </div>
+            </div>
+            <img class="diagramm-picture" src="../images/diagramm4.svg" alt="Diagramms">
+        </div>
+    </div>
+    <section class="company-feed">
+        <div class="upper-company-menu">
+            <h1>Партнеры</h1>
+            <div class="move-container"><button class="move"></button><button class="choose move"></button></div>
+        </div>
+        <div class="article-section">
+            <article class="client">
+                <h2 class="company-name">СГМК</h2>
+                <p class="company-description">Сибирская горно-металлургическая компания (СГМК), созданная в 2006 году,
+                    — безусловный лидер среди предприятий горно-металлургической отрасли Кузбасса, одна из ведущих
+                    компаний на российском рынке.</p>
+                <div class="image-container">
+                    <img class="company-logo" src="../images/image 75.svg" alt="LOGO">
+                </div>
+            </article>
+            <article class="client">
+                <h2 class="company-name">Запсибруда</h2>
+                <p class="company-description">Сибирская горно-металлургическая компания (СГМК), созданная в 2006 году,
+                    — безусловный лидер среди предприятий горно-металлургической отрасли Кузбасса, одна из ведущих
+                    компаний на российском рынке.</p>
+                <div class="image-container">
+                    <img class="company-logo" src="../images/image 72.svg" alt="LOGO">
+                </div>
+            </article>
+            <article class="client">
+                <h2 class="company-name">Амурсталь</h2>
+                <p class="company-description">«Амурсталь» — единственный на Дальнем Востоке России металлургический
+                    завод, производящий сталь по электросталеплавильной технологии с дальнейшим переделом в сортовой
+                    прокат.</p>
+                <div class="image-container">
+                    <img class="company-logo" src="../images/image 77.svg" alt="LOGO">
+                </div>
+            </article>
+            <article class="client">
+                <h2 class="company-name">Амурсталь</h2>
+                <p class="company-description">«Амурсталь» — единственный на Дальнем Востоке России металлургический
+                    завод, производящий сталь по электросталеплавильной технологии с дальнейшим переделом в сортовой
+                    прокат.</p>
+                <div class="image-container">
+                    <img class="company-logo" src="../images/image 77.svg" alt="LOGO">
+                </div>
+            </article>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footer-container">
+            <img src="../images/CubtiLogo.svg" alt="LOGO">
+            <ul class="items">
+                <li class="item">hello@cubit.su</li>
+                <li class="item">Написать в телеграмм</li>
+                <li class="item">+7 905 904-66-31</li>
+                <li class="item">г. Новокузнецк, пр-кт Кузнецкстроевский д.9</li>
+            </ul>
+        </div>
+        <div class="footer-container">
+            <h3 class="heading">Продукты</h3>
+            <ul class="items">
+                <li class="item">Zveno</li>
+                <li class="item">Мобильные осмотры</li>
+                <li class="item">КГШ</li>
+                <li class="item">ERP</li>
+                <li class="item">ОТК</li>
+                <li class="item">Проверка доверенностей</li>
+            </ul>
+        </div>
+        <div class="footer-container">
+            <h3 class="heading">Услуги</h3>
+            <ul class="items">
+                <li class="item">Бизнес-анализ</li>
+                <li class="item">Frontend-разработка</li>
+                <li class="item">Backend-разработка</li>
+                <li class="item">Мобильная разработка</li>
+            </ul>
+        </div>
+        <div class="footer-container">
+            <h3 class="heading">Компания</h3>
+            <ul class="items">
+                <li class="item">О компании</li>
+                <li class="item">Команда</li>
+                <li class="item">Контакты</li>
+            </ul>
+            <p class="non-classic-item">© 2024 ООО Кубит</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function openSolution(evt, solutionName) {
+        var i, x, tablinks;
+        var x = document.getElementsByClassName("solution");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" solution-selected", "");
+        }
+        document.getElementById(solutionName).style.display = "flex";
+        evt.currentTarget.className += " solution-selected";
+    }
+</script>
+
+<script>
+    function upChar(symboll) {
+        return symboll[0].toUpperCase() + symboll.slice(1);
+    }
+    console.log(upChar("Вася"));
+</script>
+
+<script>
+    function checkSpam(str) {
+        str = str.toLowerCase();
+        if (str.includes("1xbet"))
+            return true;
+        else if (str.includes("xxx"))
+            return true;
+        return false;
+    }
+
+    console.log(checkSpam('1XbeT now') === true);
+    console.log(checkSpam('free xxxxx') === true);
+    console.log(checkSpam('innocent rabbit') === true);
+</script>
+
+<script>
+    function truncate(str, maxlength) {
+        if (str.length <= maxlength)
+            return str;
+        return str.slice(0, maxlength - 1) + "…";
+    }
+
+    console.log(truncate('Вот, что мне хотелось бы сказать на эту тему:', 20));
+    console.log(truncate('Вот, что мне хотелось бы сказать на эту тему:', 20) === 'Вот, что мне хотело…');
+    console.log(truncate('Всем привет!', 20) === 'Всем привет!');
+</script>
+
+<script>
+    let salaries = {
+        month: 'December',
+        currency: 'USD',
+        isPayed: false
+    };
+
+    function sumSalary(salaries) {
+        let sum = 0;
+        for (let x in salaries) {
+            if ((Infinity > salaries[x]) && (salaries[x] > -Infinity) && !(isNaN(salaries[x])) && (typeof (salaries[x]) == typeof (sum)))
+                sum += salaries[x];
+        }
+        return sum;
+    }
+    console.log(sumSalary(salaries));
+</script>
+
+<script>
+    function isEmpty(obj) {
+        let i = 0;
+        for (x in obj) {
+            i++;
+        }
+        if (i == 0)
+            return true;
+        return false;
+    }
+    let schedule = {};
+
+    console.log(isEmpty(schedule)); // true
+
+    schedule["8:30"] = "подъём";
+
+    console.log(isEmpty(schedule)); // false
+</script>
+
+<script>
+    let calculator = {
+        read(number1, number2) {
+            this.number1 = number1;
+            this.number2 = number2;
+        },
+        sum() {
+            return this.number1 + this.number2;
+        },
+        mul() {
+            return this.number1 * this.number2;
+        },
+    };
+    calculator.read(3, 5);
+    console.log(calculator.sum()); // 8
+    console.log(calculator.mul()); // 15
+</script>
+
+<script>
+    let vasya = { name: 'Вася', age: 25 };
+    let petya = { name: 'Петя', age: 30 };
+    let masha = { name: 'Маша', age: 28 };
+
+    let user = [vasya, petya, masha];
+
+    function namify(users) {
+        return users.map(user => user.name);
+    }
+    let names = namify(users);
+    console.log(names);
+</script>
+
+<script>
+    let arr = [5, 3, 8, 1];
+    function filterRange(arr, a, b) {
+        return arr.filter(item => item >= a && item <= b);
+    }
+
+    let filtred = filterRange(arr, 5, 3);
+
+    console.log(filtred);
+    console.log(arr);
+</script>
+
+<script>
+    function camelize(str) {
+        str = str.split('-');
+        for (let i = 1; i < str.length; i++) {
+            str[i] = str[i][0].toUpperCase() + str[i].slice(1);
+        }
+        return str.join('');
+    }
+
+    console.log(camelize('background-color') == 'backgroundColor');
+    console.log(camelize('list-style-image') == 'listStyleImage');
+    console.log(camelize('-webkit-transition') == 'WebkitTransition');
+</script>
+
+<script>
+    let user1 = {
+        "balance": "$1,825.65",
+        "picture": "https://placehold.it/32x32",
+        "age": 21,
+        "name": "Golden Branch",
+        "gender": "male",
+        "greeting": "Hello, Golden Branch! You have 7 unread messages.",
+        "favouriteFruit": "banana"
+    };
+    let user2 = {
+        "balance": "$1,825.65",
+        "picture": "https://placehold.it/32x32",
+        "age": 21,
+        "name": "Golden Branch",
+        "gender": "male",
+        "greeting": "Hello, Golden Branch! You have 7 unread messages.",
+        "favouriteFruit": "banana"
+    };
+    let user3 = {
+        "balance": "$1,825.65",
+        "picture": "https://placehold.it/32x32",
+        "age": 45,
+        "name": "Golden Branch",
+        "gender": "male",
+        "greeting": "Hello, Golden Branch! You have 7 unread messages.",
+        "favouriteFruit": "banana"
+    };
+    let users = [user1, user2, user3];
+
+    function showSalary(users, age) {
+        let filterUsers = users.filter(user => user.age <= age);
+        let finalListsUsers = [];
+        for (let i = 0; i <= filterUsers.length; i++) {
+            finalListsUsers[i] = filterUsers[i].name + filterUsers[i].balance;
+        }
+        return finalListsUsers;
+    }
+    console.log(showSalary(users, 30));
+
+</script>
