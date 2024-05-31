@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta lang="ru">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <title>CUBIT</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <nav class="navigation-container">
+                <div class="company-logo">
+                    <img src="../images/CubtiLogo.svg" alt="LOGO">
+                </div>
+                <div class="header-label">
+                    <ul class="items">
+                        <li class="item">Продукты</li>
+                        <li class="item">Проекты</li>
+                        <li class="item">Услуги</li>
+                        <li class="item">Компания</li>
+                        <li class="item">Команда</li>
+                        <li class="item">Контакты</li>
+                    </ul>
+                </div>
+                <div class="header-button">
+                    <button class="telegramm"></button><button class="requests">Заявки</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="description-container">
+                <h1 class="tesis">IT-Решения для предприятий промышленности</h1>
+                <p class="description">Мы молодая компания, но это не мешает нам создавать мощные продукты для вашего
+                    бизнеса. Полностью ведем проект ли помогаем команде на стороне клиента.</p>
+                <button class="requests">Оставить заявку</button>
+            </div>
+            <div class="human-counter-container">
+                <h1 class="human-counter">1100</h1>
+                <p class="human-counter-description">человек ежедневно пользуются нашими продуктами</p>
+            </div>
+        </div>
+    </main>
+    <div class="scroll-feed">
+        <ul class="scroll-feed-content-1">
+            <li class="item">ClickHouse</li>
+            <li class="item">Laravel</li>
+            <li class="item">Django</li>
+            <li class="item">Yii</li>
+            <li class="item">PostgreSQL</li>
+            <li class="item">Flask</li>
+            <li class="item">Redis</li>
+        </ul>
+
+        <ul class="scroll-feed-content-2" aria-hidden="true">
+            <li class="item">ClickHouse</li>
+            <li class="item">Laravel</li>
+            <li class="item">Django</li>
+            <li class="item">Yii</li>
+            <li class="item">PostgreSQL</li>
+            <li class="item">Flask</li>
+            <li class="item">Redis</li>
+        </ul>
+    </div>
+    <div class="service-solution">
+        <h1 class="solution-tesis">Услуги и решения</h1>
+        <div class="solution-container">
+            <script src = "../Js/index.js"></script>
+            <div class="solutions">
+                <button class="solution-btn tablink solution-selected"
+                    onclick="openSolution(event,'Bussiness')">Бизнес-анализ</button>
+                <button class="solution-btn tablink" onclick="openSolution(event,'Backend')">Backend</button>
+                <button class="solution-btn tablink" onclick="openSolution(event,'Frontend')">Frontend</button>
+                <button class="solution-btn tablink" onclick="openSolution(event,'Mobile')">Mobile</button>
+            </div>
+        </div>
+        <div class="solution-explanation-container solution" id="Bussiness">
+            <div class="solution-explanation">
+                <h1 class="solution-name">Бизнес-анализ</h1>
+                <p class="solution-description">Бесшовно встраиваем новые ИТ-решения в бизнес- процессы компаний.
+                    Анализируем
+                    уже существующие цифровые системы, предлагаем изменения, описываем технические требования на основе
+                    бизнес-требований.</p>
+                <ul class="solution-tags">
+                    <li class="solution-tag">HTML5</li>
+                    <li class="solution-tag">CSS3</li>
+                    <li class="solution-tag">Bootstrap</li>
+                    <li class="solution-tag">БЭМ</li>
+                    <li class="solution-tag">JS</li>
+                    <li class="solution-tag">Jquery</li>
+                    <li class="solution-tag">VanilaJS</li>
+                    <li class="solution-tag">ES6+</li>
+                    <li class="solution-tag">WebPack</li>
+                    <li class="solution-tag">VUE.js</li>
+                    <li class="solution-tag">React.js</li>
+                    <li class="solution-tag">Angular</li>
+                </ul>
+                <div class="info-container">
+                    <button class="requests">Заказать</button><a href="#" class="detail">Подробнее</a>
+                </div>
+            </div>
+            <img class="diagramm-picture" src="../images/diagramm.svg" alt="Diagramms">
+        </div>
+        <div class="solution-explanation-container hidden-block solution" id="Backend">
+            <div class="solution-explanation">
+                <h1 class="solution-name">Backend</h1>
+                <p class="solution-description">Бесшовно встраиваем новые ИТ-решения в бизнес- процессы компаний.
+                    Анализируем
+                    уже существующие цифровые системы, предлагаем изменения, описываем технические требования на основе
+                    бизнес-требований.</p>
+                <ul class="solution-tags">
+                    <li class="solution-tag">HTML5</li>
+                    <li class="solution-tag">CSS3</li>
+                    <li class="solution-tag">Bootstrap</li>
+                    <li class="solution-tag">БЭМ</li>
+                    <li class="solution-tag">JS</li>
+                    <li class="solution-tag">Jquery</li>
+                    <li class="solution-tag">VanilaJS</li>
+                    <li class="solution-tag">ES6+</li>
+                    <li class="solution-tag">WebPack</li>
+                    <li class="solution-tag">VUE.js</li>
+                    <li class="solution-tag">React.js</li>
+                    <li class="solution-tag">Angular</li>
+                </ul>
+                <div class="info-container">
+                    <button class="requests">Заказать</button><a href="#" class="detail">Подробнее</a>
+                </div>
+            </div>
+            <img class="diagramm-picture" src="../images/diagramm2.svg" alt="Diagramms">
+        </div>
+        <div class="solution-explanation-container hidden-block solution" id="Frontend">
+            <div class="solution-explanation">
+                <h1 class="solution-name">Frontend</h1>
+                <p class="solution-description">Бесшовно встраиваем новые ИТ-решения в бизнес- процессы компаний.
+                    Анализируем
+                    уже существующие цифровые системы, предлагаем изменения, описываем технические требования на основе
+                    бизнес-требований.</p>
+                <ul class="solution-tags">
+                    <li class="solution-tag">HTML5</li>
+                    <li class="solution-tag">CSS3</li>
+                    <li class="solution-tag">Bootstrap</li>
+                    <li class="solution-tag">БЭМ</li>
+                    <li class="solution-tag">JS</li>
+                    <li class="solution-tag">Jquery</li>
+                    <li class="solution-tag">VanilaJS</li>
+                    <li class="solution-tag">ES6+</li>
+                    <li class="solution-tag">WebPack</li>
+                    <li class="solution-tag">VUE.js</li>
+                    <li class="solution-tag">React.js</li>
+                    <li class="solution-tag">Angular</li>
+                </ul>
+                <div class="info-container">
+                    <button class="requests">Заказать</button><a href="#" class="detail">Подробнее</a>
+                </div>
+            </div>
+            <img class="diagramm-picture" src="../images/diagramm3.svg" alt="Diagramms">
+        </div>
+        <div class="solution-explanation-container hidden-block solution" id="Mobile">
+            <div class="solution-explanation">
+                <h1 class="solution-name">Mobile</h1>
+                <p class="solution-description">Бесшовно встраиваем новые ИТ-решения в бизнес- процессы компаний.
+                    Анализируем
+                    уже существующие цифровые системы, предлагаем изменения, описываем технические требования на основе
+                    бизнес-требований.</p>
+                <ul class="solution-tags">
+                    <li class="solution-tag">HTML5</li>
+                    <li class="solution-tag">CSS3</li>
+                    <li class="solution-tag">Bootstrap</li>
+                    <li class="solution-tag">БЭМ</li>
+                    <li class="solution-tag">JS</li>
+                    <li class="solution-tag">Jquery</li>
+                    <li class="solution-tag">VanilaJS</li>
+                    <li class="solution-tag">ES6+</li>
+                    <li class="solution-tag">WebPack</li>
+                    <li class="solution-tag">VUE.js</li>
+                    <li class="solution-tag">React.js</li>
+                    <li class="solution-tag">Angular</li>
+                </ul>
+                <div class="info-container">
+                    <button class="requests">Заказать</button><a href="#" class="detail">Подробнее</a>
+                </div>
+            </div>
+            <img class="diagramm-picture" src="../images/diagramm4.svg" alt="Diagramms">
+        </div>
+    </div>
+    <section class="company-feed">
+        <div class="upper-company-menu">
+            <h1>Партнеры</h1>
+            <div class="move-container"><button class="move"></button><button class="choose move"></button></div>
+        </div>
+        <div class="article-section">
+            <article class="client">
+                <h2 class="company-name">СГМК</h2>
+                <p class="company-description">Сибирская горно-металлургическая компания (СГМК), созданная в 2006 году,
+                    — безусловный лидер среди предприятий горно-металлургической отрасли Кузбасса, одна из ведущих
+                    компаний на российском рынке.</p>
+                <div class="image-container">
+                    <img class="company-logo" src="../images/image 75.svg" alt="LOGO">
+                </div>
+            </article>
+            <article class="client">
+                <h2 class="company-name">Запсибруда</h2>
+                <p class="company-description">Сибирская горно-металлургическая компания (СГМК), созданная в 2006 году,
+                    — безусловный лидер среди предприятий горно-металлургической отрасли Кузбасса, одна из ведущих
+                    компаний на российском рынке.</p>
+                <div class="image-container">
+                    <img class="company-logo" src="../images/image 72.svg" alt="LOGO">
+                </div>
+            </article>
+            <article class="client">
+                <h2 class="company-name">Амурсталь</h2>
+                <p class="company-description">«Амурсталь» — единственный на Дальнем Востоке России металлургический
+                    завод, производящий сталь по электросталеплавильной технологии с дальнейшим переделом в сортовой
+                    прокат.</p>
+                <div class="image-container">
+                    <img class="company-logo" src="../images/image 77.svg" alt="LOGO">
+                </div>
+            </article>
+            <article class="client">
+                <h2 class="company-name">Амурсталь</h2>
+                <p class="company-description">«Амурсталь» — единственный на Дальнем Востоке России металлургический
+                    завод, производящий сталь по электросталеплавильной технологии с дальнейшим переделом в сортовой
+                    прокат.</p>
+                <div class="image-container">
+                    <img class="company-logo" src="../images/image 77.svg" alt="LOGO">
+                </div>
+            </article>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footer-container">
+            <img src="../images/CubtiLogo.svg" alt="LOGO">
+            <ul class="items">
+                <li class="item">hello@cubit.su</li>
+                <li class="item">Написать в телеграмм</li>
+                <li class="item">+7 905 904-66-31</li>
+                <li class="item">г. Новокузнецк, пр-кт Кузнецкстроевский д.9</li>
+            </ul>
+        </div>
+        <div class="footer-container">
+            <h3 class="heading">Продукты</h3>
+            <ul class="items">
+                <li class="item">Zveno</li>
+                <li class="item">Мобильные осмотры</li>
+                <li class="item">КГШ</li>
+                <li class="item">ERP</li>
+                <li class="item">ОТК</li>
+                <li class="item">Проверка доверенностей</li>
+            </ul>
+        </div>
+        <div class="footer-container">
+            <h3 class="heading">Услуги</h3>
+            <ul class="items">
+                <li class="item">Бизнес-анализ</li>
+                <li class="item">Frontend-разработка</li>
+                <li class="item">Backend-разработка</li>
+                <li class="item">Мобильная разработка</li>
+            </ul>
+        </div>
+        <div class="footer-container">
+            <h3 class="heading">Компания</h3>
+            <ul class="items">
+                <li class="item">О компании</li>
+                <li class="item">Команда</li>
+                <li class="item">Контакты</li>
+            </ul>
+            <p class="non-classic-item">© 2024 ООО Кубит</p>
+        </div>
+    </div>
+</body>
+
+</html>
