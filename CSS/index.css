@@ -22,7 +22,6 @@ body {
 }
 
 .header-container {
-    padding: 0 15px;
     height: 65px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
@@ -39,30 +38,35 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
+    max-width: 1400px;
+    justify-content: space-evenly;
 
-    @media screen and (min-width: 320px) and (max-width: 425px) {
-        max-width: auto;
-        justify-content: space-evenly;
-        margin: 0;
-    }
-
-    @media screen and (min-width: 1920px) and (max-width: 2560px) {
+    @media screen and (min-width: 1920px) {
         max-width: 1400px;
     }
 
-    @media screen and (min-width: 1400px) and (max-width: 1919px) {
-        max-width: 1200px;
+    @media screen and (min-width: 901px) and (max-width: 1919px) {
+        max-width: 900px;
+    }
+
+    @media screen and (min-width: 426px) and (max-width: 900px) {
+        min-width: 320px;
+    }
+
+    @media screen and (max-width: 425px) {
+        max-width: auto;
+        justify-content: space-evenly;
     }
 }
 
 .navigation-container .menu {
-    @media screen and (min-width: 320px) and (max-width: 425px) {
+    display: none;
+
+    @media screen and (max-width: 900px) {
         display: flex;
+        align-items: center;
         width: 20%;
     }
-
-    align-self: center;
-    display: none;
 }
 
 .navigation-container .company-logo {
@@ -70,6 +74,10 @@ body {
     height: 36px;
     display: flex;
     align-self: center;
+
+    @media screen and (min-width: 600px) and (max-width: 1000px) {
+        justify-content: center;
+    }
 }
 
 .navigation-container .header-label {
@@ -77,13 +85,13 @@ body {
 }
 
 .navigation-container .header-label .items {
-    @media screen and (min-width: 320px) and (max-width: 425px) {
-        display: none;
-    }
-
     width: auto;
     display: flex;
     list-style: none;
+
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
 }
 
 .item {
@@ -98,6 +106,14 @@ body {
     justify-content: flex-end;
     align-items: center;
     width: 33%;
+
+    @media screen and (min-width: 1001px) and (max-width: 1322px) {
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 1000px) {
+        justify-content: flex-start;
+    }
 }
 
 .navigation-container .header-button .requests {
@@ -130,7 +146,7 @@ body {
     border: 0px;
     margin-right: 20px;
 
-    @media screen and (min-width: 320px) and (max-width: 425px) {
+    @media screen and (max-width: 600px) {
         display: none;
     }
 }
@@ -147,15 +163,27 @@ main {
     background-size: contain;
     background-image: url("../images/Background.png");
 
-    @media screen and (min-width: 1920px) and (max-width: 2560px) {
+    @media screen and (min-width: 1920px) {
         background-image: url("../images/Background2.png");
         background-size: 75% 150%;
         background-position: bottom -400px right -500px;
     }
 
-    @media screen and (min-width: 320px) and (max-width: 425px) {
+    @media screen and (min-width: 1400px) and (max-width: 1919px) {
+        background-image: url("../images/Background2.png");
+        background-size: 75% 150%;
+        background-position: bottom -300px right -200px;
+    }
+
+    @media screen and (min-width: 426px) and (max-width: 1399px) {
+        background-image: url("../images/Background2.png");
+        background-size: 75% 150%;
+        background-position: bottom -300px right -200px;
+    }
+
+    @media screen and (max-width: 425px) {
         background-position: bottom -50px right -50px;
-        padding-top: 100px;
+
         background-size: contain;
         background-image: url("../images/MobileBackground.png");
     }
@@ -167,17 +195,16 @@ main .main-container {
     flex-wrap: wrap;
     margin: auto;
 
-    @media screen and (min-width: 1920px) and (max-width: 2560px) {
+    @media screen and (min-width: 1920px) {
         max-width: 1400px;
-        align-content: space-around;
     }
 
-    @media screen and (max-width: 1919px) and (min-width: 1400px) {
-        max-width: 1200px;
-        align-content: space-around;
+    @media screen and (max-width: 1919px) and (min-width: 1001px) {
+        max-width: 1000px;
     }
 
-    @media screen and (min-width: 320px) and (max-width: 425px) {
+    @media screen and (max-width: 1000px) {
+        padding-top: 100px;
         justify-content: center;
         align-items: center;
         height: 75vh;
@@ -189,20 +216,31 @@ main .tesis {
     color: #ffffff;
     font-size: 64px;
 
-    @media screen and (min-width: 320px) and (max-width: 425px) {
+    @media screen and (min-width: 1301px) and (max-width: 1909px) {
+        font-size: 52px;
+        max-width: 99%;
+    }
+
+    @media screen and (min-width: 1001px) and (max-width: 1300px) {
+        font-size: 44px;
+        max-width: 99%;
+    }
+
+    @media screen and (max-width: 1000px) {
         font-size: 27px;
+        max-width: 99%;
     }
 }
 
 main .description-container {
     width: 50%;
     flex-wrap: wrap;
+    margin: auto;
     justify-content: center;
     align-items: center;
 
-    @media screen and (min-width: 320px) and (max-width: 425px) {
+    @media screen and (max-width: 1000px) {
         width: 90%;
-        margin: auto;
     }
 }
 
@@ -219,7 +257,7 @@ main .description-container .requests {
     font-weight: bold;
     font-family: 'HeliosExt', sans-serif;
 
-    @media screen and (min-width: 320px) and (max-width: 425px) {
+    @media screen and (max-width: 1000px) {
         display: none;
     }
 }
@@ -228,9 +266,9 @@ main .description {
     color: #ffffff;
     margin-top: 30px;
 
-    @media screen and (min-width: 320px) and (max-width: 425px) {
+    @media screen and (max-width: 1000px) {
         font-size: 22px;
-        max-width: 100%;
+        max-width: 99%;
         margin-top: 20px;
     }
 }
@@ -249,43 +287,37 @@ main .human-counter {
     position: relative;
     z-index: -2;
 
-    @media screen and (min-width: 320px) and (max-width: 425px) {
+    @media screen and (max-width: 1399px) {
         font-size: 102px;
-        width: 100%;
     }
 }
 
 main .human-counter-description {
-
-    @media screen and (min-width: 320px) and (max-width: 425px) {
-        font-size: 14px;
-        max-width: 100%;
-    }
-
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
-    font-family: 'HeliosExt',
-    sans-serif;
+    font-family: 'HeliosExt', sans-serif;
     color: #ffffff;
     font-size: 14px;
 
+    @media screen and (max-width: 425px) {
+        font-size: 14px;
+        max-width: 100%;
+    }
 }
 
 main .human-counter-container {
-    margin-top: 50px;
-    margin-left: 250px;
-
-    @media screen and (min-width: 320px) and (max-width: 425px) {
-        margin-left: 0px;
-        max-width: 280px;
-        margin-bottom: 100px;
-    }
-
+    margin: auto;
     display: flex;
     flex-direction: column;
     max-width: 50%;
     width: 300px;
+
+    @media screen and (max-width: 425px) {
+        margin-left: 0px;
+        max-width: 280px;
+        margin-bottom: 100px;
+    }
 }
 
 main .human-counter-container .human-counter-description {
@@ -295,7 +327,6 @@ main .human-counter-container .human-counter-description {
 }
 
 @keyframes scroll {
-
     0% {
         transform: translateX(0);
     }
@@ -335,10 +366,6 @@ main .human-counter-container .human-counter-description {
 }
 
 .scroll-feed .scroll-feed-content-1 {
-    @media screen and (min-width: 320px) and (max-width: 425px) {
-        animation: scrollLowResolution 5s linear infinite;
-    }
-
     animation: scroll 9s linear infinite;
     align-content: center;
     list-style-type: none;
@@ -346,6 +373,10 @@ main .human-counter-container .human-counter-description {
     position: relative;
     flex-direction: row;
     display: flex;
+
+    @media screen and (max-width: 425px) {
+        animation: scrollLowResolution 5s linear infinite;
+    }
 }
 
 .scroll-feed .scroll-feed-content-2 {
@@ -355,7 +386,7 @@ main .human-counter-container .human-counter-description {
     justify-content: space-between;
     position: relative;
 
-    @media screen and (min-width: 320px) and (max-width: 425px) {
+    @media screen and (max-width: 425px) {
         display: none;
     }
 }
@@ -365,14 +396,12 @@ main .human-counter-container .human-counter-description {
     padding-right: 40px;
     line-height: 150%;
     font-size: 16px;
-
-    @media screen and (min-width: 320px) and (max-width: 425px) {
-        font-size: 24px;
-    }
-
     max-height: 100%;
     white-space: nowrap;
 
+    @media screen and (max-width: 425px) {
+        font-size: 24px;
+    }
 }
 
 .scroll-feed .scroll-feed-content-2 .item {
@@ -393,17 +422,23 @@ body .service-solution {
     align-items: center;
     margin: auto;
     color: #ffffff;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
-    @media screen and (max-width: 1919px) and (min-width: 1400px) {
-        max-width: 1200px;
-    }
-
-    @media screen and (max-width: 2560px) and (min-width: 1920px) {
+    @media screen and (min-width: 1920px) {
         max-width: 1400px;
     }
 
-    @media screen and (min-width: 320px) and (max-width: 425px) {
+    @media screen and (min-width: 1400px) and (max-width: 1919px) {
+        max-width: 1200px;
+    }
+
+    @media screen and (min-width: 426px) and (max-width: 1399px) {
+        align-items: center;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    @media screen and (max-width: 425px) {
         align-items: flex-start;
         max-width: 280px;
         overflow: hidden;
@@ -416,7 +451,14 @@ body .service-solution {
     font-size: 64px;
     line-height: 112%;
 
-    @media screen and (min-width: 320px) and (max-width: 425px) {
+    @media screen and (min-width: 426px) and (max-width: 1399px) {
+        font-size: 36px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 425px) {
         font-size: 36px;
         margin: auto;
         margin-top: 50px;
@@ -426,10 +468,14 @@ body .service-solution {
 
 .service-solution .solution-container {
     max-width: 1400px;
- 
     display: flex;
 
-    @media screen and (max-width: 425px) and (min-width: 320px) {
+    @media screen and (min-width: 426px) and (max-width: 1399px) {
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: 425px) {
         overflow: hidden;
         max-width: 290px;
     }
@@ -459,7 +505,7 @@ body .service-solution {
     background-color: #222628;
     cursor: pointer;
 
-    @media screen and (max-width: 425px) and (min-width: 320px) {
+    @media screen and (max-width: 425px) {
         max-width: 180px;
     }
 }
@@ -481,18 +527,22 @@ body .service-solution {
     display: flex;
     flex-wrap: wrap;
     width: 500px;
-
-    @media screen and (max-width: 425px) and (min-width: 320px) {
-        max-width: 280px;
-        gap: 5px 10px;
-    }
-
     list-style-type: none;
     align-content: center;
     gap: 12px 10px;
+
+    @media screen and (min-width: 426px) and (max-width: 1399px) {
+        max-width: 425px;
+        gap: 5px 10px;
+    }
+
+    @media screen and (max-width: 425px) {
+        max-width: 280px;
+        gap: 5px 10px;
+    }
 }
 
-@media screen and (max-width: 425px) and (min-width: 320px) {
+@media screen and (max-width: 425px) {
     .solution-tag:first-child:before {
         content: "Технологии: ";
     }
@@ -510,7 +560,7 @@ body .service-solution {
     font-size: 14px;
     background-color: #222628;
 
-    @media screen and (max-width: 425px) and (min-width: 320px) {
+    @media screen and (max-width: 425px) {
         padding: 0;
         height: auto;
         border-radius: 0px;
@@ -533,7 +583,7 @@ body .service-solution {
     line-height: 150%;
     font-family: 'HeliosExt', sans-serif;
 
-    @media screen and (max-width: 425px) and (min-width: 320px) {
+    @media screen and (max-width: 425px) {
         display: none
     }
 }
@@ -557,7 +607,7 @@ body .service-solution {
     width: 166px;
     height: 48px;
 
-    @media screen and (max-width: 425px) and (min-width: 320px) {
+    @media screen and (max-width: 425px) {
         border-radius: 40px;
         padding: 13px 28px 11px 28px;
         text-align: center;
@@ -580,6 +630,14 @@ body .service-solution {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 426px) and (max-width: 1399px) {
+        max-width: 425px;
+        padding-top: 50px;
+        margin: auto;
+        justify-items: center;
+        flex-direction: column;
+    }
 }
 
 .hidden-block {
@@ -591,7 +649,11 @@ body .service-solution {
     flex-direction: column;
     max-width: 600px;
 
-    @media screen and (max-width: 425px) and (min-width: 320px) {
+    @media screen and (min-width: 426px) and (max-width: 1399px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 425px) {
         max-width: 320px;
     }
 }
@@ -608,7 +670,14 @@ body .service-solution {
     width: 592px;
     height: 440px;
 
-    @media screen and (max-width: 425px) and (min-width:320px) {
+    @media screen and (min-width: 426px) and (max-width: 1399px) {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        size: auto;
+    }
+
+    @media screen and (max-width: 425px) {
         width: 300px;
         height: 300px;
         margin: auto;
@@ -626,6 +695,12 @@ body .service-solution {
     align-items: center;
     display: flex;
     margin: auto;
+
+    @media screen and (min-width: 426px) and (max-width: 1399px) {
+        max-width: auto;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 }
 
 .company-feed h1 {
@@ -633,14 +708,14 @@ body .service-solution {
     font-size: 64px;
     line-height: 112%;
 
-    @media screen and (max-width: 425px) and (min-width: 320px) {
+    @media screen and (max-width: 730px) {
         font-size: 36px;
         margin: auto;
     }
 }
 
 .company-feed .move-container {
-    @media screen and (max-width: 425px) and (min-width: 320px) {
+    @media screen and (max-width: 730px) {
         display: none;
     }
 }
@@ -665,8 +740,9 @@ body .service-solution {
 
 .article-section {
     display: flex;
-    justify-content: space-between;
-    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: clip;
 }
 
 .client {
@@ -678,11 +754,23 @@ body .service-solution {
     background: #222628;
     display: flex;
     flex-direction: column;
+    text-overflow: ellipsis;
 
-    @media screen and (max-width: 425px) and (min-width: 320px) {
-        max-width: 257px;
-        max-height: 336px;
+    @media screen and (min-width: 426px) and (max-width: 1399px) {
+        min-width: 300px;
+        font-size: 14px;
+        width: 300px;
+        min-height: 350px;
         margin-left: 16px;
+        margin-right: 16px;
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 425px) {
+        min-width: 257px;
+        min-height: 336px;
+        margin-left: 16px;
+        font-size: 14px;
         margin-right: 16px;
         padding: 20px;
     }
@@ -692,7 +780,7 @@ body .service-solution {
     margin-top: 20px;
     line-height: 150%;
 
-    @media screen and (max-width: 425px) and (min-width: 320px) {
+    @media screen and (max-width: 425px) {
         font-size: 14px;
         line-height: 100%;
         width: 217px;
@@ -708,15 +796,23 @@ body .service-solution {
 .footer {
     margin-top: 100px;
     color: #ffffff;
-    width: 100%;
+    max-width: 100%;
     height: 299px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    min-width: 1400px;
 
-    @media screen and (max-width: 425px) and (min-width:320px) {
+    @media screen and (min-width: 601px) and (max-width: 1399px) {
+        justify-content: center;
+        min-width: auto;
+    }
+
+    @media screen and (max-width: 600px) {
         flex-direction: column;
         margin-left: 30px;
+        min-width: auto;
         max-width: 290px;
+        justify-content: center;
     }
 }
 
@@ -726,7 +822,7 @@ body .service-solution {
 }
 
 .footer .footer-container img {
-    @media screen and (max-width: 425px) and (min-width: 320px) {
+    @media screen and (max-width: 600px) {
         display: none;
     }
 }
@@ -734,7 +830,7 @@ body .service-solution {
 .footer .items {
     list-style-type: none;
 
-    @media screen and (max-width: 425px) and (min-width:320px) {
+    @media screen and (max-width: 600px) {
         font-size: 24px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -744,13 +840,11 @@ body .service-solution {
 .footer .item {
     max-width: 185px;
     text-align: left;
-    margin-left: 0;
-    padding: 0;
     margin-top: 20px;
     font-weight: normal;
     font-size: 14px;
 
-    @media screen and (max-width: 425px) and (min-width:320px) {
+    @media screen and (max-width: 600px) {
         font-size: 24px;
         display: none;
         width: 100%;
@@ -761,24 +855,21 @@ body .service-solution {
 body .footer .company-info .items .item {
     width: 185px;
     text-align: left;
-    margin-left: 0;
-    padding: 0;
     margin-top: 20px;
     font-weight: normal;
     font-size: 14px;
 
-    @media screen and (max-width: 425px) and (min-width:320px) {
+    @media screen and (max-width: 600px) {
         font-size: 24px;
         display: inline-block;
         width: auto;
         flex-wrap: wrap;
         max-width: 290px;
     }
-
 }
 
 body .footer .company-info img {
-    @media screen and (max-width:425px) and (min-width: 320px) {
+    @media screen and (max-width: 600px) {
         display: none;
     }
 }
@@ -787,7 +878,7 @@ body .footer .company-info img {
     font-weight: bold;
     font-size: 14px;
 
-    @media screen and (max-width: 425px) and (min-width:320px) {
+    @media screen and (max-width: 1399px) {
         font-size: 24px;
     }
 }
@@ -795,16 +886,22 @@ body .footer .company-info img {
 .footer .non-classic-item {
     opacity: 0.5;
     font-size: 14px;
+    height: 108px;
+    align-content: end;
 
-    @media screen and (max-width: 425px) and (min-width:320px) {
-        font-size: 24px;
+    @media screen and (min-width: 601px) and (max-width: 1399px) {
+        font-size: 12px;
         margin-top: 50px;
         margin-bottom: 50px;
         height: auto;
     }
 
-    height: 108px;
-    align-content: end;
+    @media screen and (max-width: 600px) {
+        font-size: 24px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: auto;
+    }
 }
 
 /*animation, position, z-index, max-width, class for div*/
